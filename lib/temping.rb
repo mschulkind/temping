@@ -34,7 +34,7 @@ class Temping
     private
 
     def create_table
-      connection.create_table(table_name, :temporary => true)
+      connection.create_table(table_name, :temporary => true, :force => true)
     end
 
     def add_methods
